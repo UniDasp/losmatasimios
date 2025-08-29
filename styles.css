@@ -1,9 +1,13 @@
 body {
-    background: #121212;
+    background: #2A7B9B;
+background: linear-gradient(90deg,
+rgb(129, 155, 42) 0%,
+rgba(87, 199, 133, 1) 50%,
+rgb(83, 211, 237) 100%);
 }
 
 .btn {
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     background-color: #2979FF;
 }
 
@@ -15,19 +19,51 @@ body {
 .my-4 {
     color: #E0E0E0;
 
+
 }
 
 .form-control {
-    background-color: gray;
+    background-color: rgb(200, 188, 188);
     border-color: transparent; 
 }
 
-.form-select {
-    background-color: gray;
+#region {
+    background-color: rgb(202, 195, 195);
     border-color: transparent;
+    color:rgb(77, 73, 73)
 }
 
 .form-label {
     color: white; 
 }
+
+#main-label {
+      font-family: monospace;
+      font-size: 2em;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid black;
+      width: 0;
+      display: inline-block;
+      animation: escribir 3s steps(40, end) forwards, parpadeo 0.7s step-end infinite;
+    }
+    @keyframes escribir {
+      from { width: 0; }
+      to { width: 820px ; } 
+    }
+    @keyframes parpadeo {
+      0%, 100% { border-color: rgb(161, 158, 158); }
+      50% { border-color: transparent; }
+    }
+
+#sub-label{
+    font-family: monospace;
+    color: #E0E0E0;
+   animation: flotandouwu 4s ease-in infinite, flotandouwu 5s ease infinite, 4s ease-out infinite;
+}
+@keyframes flotandouwu{
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-30%);}
+}
+
 

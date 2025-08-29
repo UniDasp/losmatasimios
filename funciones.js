@@ -17,6 +17,20 @@ document
       nombre.classList.remove("is-invalid");
     }
 
+    if (!apellido.value.trim()) {
+      apellido.classList.add("is-invalid");
+      isValid = false;
+    } else {
+      apellido.classList.remove("is-invalid")
+
+    }
+    if (!rut.value.trim()) {
+      rut.classList.add("is-invalid");
+      isValid = false;
+    } else {
+      rut.classList.remove("is-invalid")
+    }
+
     if (!email.value.trim()) {
       email.classList.add("is-invalid");
       isValid = false;

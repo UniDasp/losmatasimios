@@ -18,6 +18,11 @@
             <h1>Bienvenidos a Lo quieres, te lo vendo</h1>
         </header>
 
+        <header class="a-subtle" id = "sub-label">
+            <h2> Rellena con tus datos</h2>
+        </header>
+    
+
       
         <form id="formularioContacto" novalidate>
             <div class="mb-3">
@@ -27,6 +32,27 @@
                     Por favor ingresa tu nombre.
                 </div>
             </div>
+
+
+                
+                <div class="apellido">
+                    <label for= "apellido" class="form-label" id="form-apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingresa el apellido" required/>
+                    <div class="invalid-feedback">
+                        Por favor ingresa el apellido
+                    </div>
+
+                </div>
+                
+
+
+                <div class="rut">
+                    <label for="rut" class="form-label" id="form-rut">Rut:</label>
+                    <input type="text" class="form-control" id="rut" placeholder="Ingresa el rut" required/>
+                    <div class="invalid-feedback">
+                        Por favor ingresa el rut!
+                    </div>
+                </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label" id="form-email">Email:</label>
@@ -89,12 +115,12 @@
                 <div class="invalid-feedback">
                     Por favor ingresa tus comentarios.
                 </div>
-                <div class="invalid-feedback">
-                    Por favor ingresa tus comentarios.
+                
             </div>
 
-            <button type="submit" id= "submit" class="btn btn-primary" style="margin-top: 10px;">Enviar</button>
-            <button type="submit" id= "submit" class="btn btn-primary" style="margin-top: 10px;">Test</button>
+            <button type="submit" id= "submit" class="btn btn-primary" style="margin-left: 620px;">Enviar</button>
+            
+            <button type="submit" id= "submit" class="btn btn-primary" style="margin-top: 1px;">Test</button>
         </form>
     </div>
 
