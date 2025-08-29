@@ -3,6 +3,8 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
     const nombre = document.getElementById("nombre");
+    const apellido = document.getElementById("apellido");
+    const rut = document.getElementById("rut");
     const email = document.getElementById("email");
     const numero = document.getElementById("numero");
     const pwd = document.getElementById("pwd");
