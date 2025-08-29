@@ -1,0 +1,33 @@
+body {
+    background: #121212;
+}
+
+.btn {
+    transition: all 0.3s ease;
+    background-color: #2979FF;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #82B1FF;
+}
+
+.my-4 {
+    color: #E0E0E0;
+
+}
+
+.form-control {
+    background-color: gray;
+    border-color: transparent; 
+}
+
+.form-select {
+    background-color: gray;
+    border-color: transparent;
+}
+
+.form-label {
+    color: white; 
+}
+
